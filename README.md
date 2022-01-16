@@ -31,11 +31,11 @@ Example Playbook
       roles:
           - nvjacobo.snowflake
 
-Example Playbook with maximum concurrent clients(for example 150)
+Example Playbook with maximum concurrent clients (for example 150)
 ----------------
 
-   - hosts: snowflake
-     vars:
-      clients: 150
-     roles:
-       - nvjacobo.snowflake
+    - hosts: servers
+      vars:
+         clients: 150
+      roles:
+        - nvjacobo.snowflake
